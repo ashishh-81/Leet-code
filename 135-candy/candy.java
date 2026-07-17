@@ -5,7 +5,7 @@ class Solution {
         for(int i=0;i< ratings.length;i++){
             candies[i] = c;
         }
-
+        // piche ka dekhta hai matlab apne se left ka comparision
         for(int i=1;i<ratings.length;i++){
 
             if(ratings[i]>ratings[i-1]){
@@ -13,6 +13,7 @@ class Solution {
             }
         }
 
+        // apne se right se compare karta hai
         for(int i= ratings.length-2;i>=0;i--){
 
             if(ratings[i]>ratings[i+1]){
